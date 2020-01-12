@@ -16,52 +16,75 @@
 	<!-- style -->
 	<style type="text/css">
 		.wrap {
-			width: auto;
-			margin: auto;
+			width: 400px;
+			height: 400px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+			margin-top: 400px;
+			margin-bottom: 400px;
+
+		}
+		.image {
+			text-decoration-style: middle;
 		}
 		*{
 			font-family: 'Black Han Sans', sans-serif;
 			font-family: 'Song Myung', serif;
 		}
-		.input-group mb-3{
-			width: auto;  }
-		</style>
-	</head>
-	<body>
-		<div class="wrap">
+		.input-group mb-3 {
+			display: inline-block;
+			width: 90%;
+			width: 300px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="image">
 			<img src="https://t1.daumcdn.net/cfile/tistory/25763C35574FA2F003">
-			<h1 title>석류를 팝니다</h1>
-			<h5>가격: 20,000원/개</h5>
-
-			<div class="input-group mb-3">
-				<div class="input-group-prepend">
-					<span class="input-group-text" id="inputGroup-sizing-default">주문자성함</span>
-				</div>
-				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+			<span><h1>석류를 팝니다</h1><h5>가격: 20,000원/박스</h5></span>
+			<h6>달고 맛있는 석류!</h6>
+		</div>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-default">주문자성함</span>
 			</div>
+			<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+		</div>
 
-			<div class="input-group mb-3">
-				<div class="input-group-prepend">
-					<label class="input-group-text" for="inputGroupSelect01">수량</label>
-				</div>
-				<select class="custom-select" id="inputGroupSelect01">
-					<option selected>--수량을 선택하세요--</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-				</select>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<label class="input-group-text" for="inputGroupSelect01">수량</label>
 			</div>
+			<select class="custom-select" id="inputGroupSelect01">
+				<option selected>--수량을 선택하세요--</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="3">4</option>
+				<option value="3">5</option>
+			</select>
+		</div>
 
+		<div class="input-group mb-3">
 			<div class="input-group-prepend">
 				<span class="input-group-text" id="inputGroup-sizing-default">주소</span>	
-				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
+			<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+		</div>
 
+		<div class="input-group mb-3">
 			<div class="input-group-prepend">
 				<span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
-				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
-
+			<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 		</div>
-	</body>
-	</html>
+		<button type="button" class="btn btn-primary">주문하기</button>
+	</div>
+</body>
+</html>
